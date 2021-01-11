@@ -1,6 +1,6 @@
 # Kitchenette 0.1.0
 
-# Decsription
+# Description
 
 L’objectif de ce projet est de vous faire développer une librairie de composants Reactjs pour faciliter le travail d'un développeur frontend débutant ainsi pour exploiter cette bibliothèque dans la construction d’un moteur à facettes
 
