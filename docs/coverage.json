@@ -1,0 +1,616 @@
+{
+  "coverage": "16.03%",
+  "expectCount": 237,
+  "actualCount": 38,
+  "files": {
+    "lib/Charts/Activity/Activity.js": {
+      "expectCount": 4,
+      "actualCount": 0,
+      "undocumentLines": [
+        6,
+        7,
+        61,
+        177
+      ]
+    },
+    "lib/Charts/Area/Area.js": {
+      "expectCount": 4,
+      "actualCount": 0,
+      "undocumentLines": [
+        4,
+        6,
+        10,
+        86
+      ]
+    },
+    "lib/Charts/Bar/Bar.js": {
+      "expectCount": 4,
+      "actualCount": 0,
+      "undocumentLines": [
+        4,
+        5,
+        9,
+        76
+      ]
+    },
+    "lib/Charts/Bubble/Bubble.js": {
+      "expectCount": 4,
+      "actualCount": 0,
+      "undocumentLines": [
+        5,
+        6,
+        10,
+        117
+      ]
+    },
+    "lib/Charts/Cloud/Cloud.js": {
+      "expectCount": 5,
+      "actualCount": 0,
+      "undocumentLines": [
+        5,
+        6,
+        8,
+        12,
+        16
+      ]
+    },
+    "lib/Charts/Donut/Donut.js": {
+      "expectCount": 4,
+      "actualCount": 0,
+      "undocumentLines": [
+        4,
+        5,
+        9,
+        288
+      ]
+    },
+    "lib/Charts/Donut/SemiCircle.js": {
+      "expectCount": 3,
+      "actualCount": 0,
+      "undocumentLines": [
+        4,
+        5,
+        60
+      ]
+    },
+    "lib/Charts/Line/Line.js": {
+      "expectCount": 4,
+      "actualCount": 0,
+      "undocumentLines": [
+        4,
+        5,
+        9,
+        76
+      ]
+    },
+    "lib/Charts/Pie/Pie.js": {
+      "expectCount": 4,
+      "actualCount": 0,
+      "undocumentLines": [
+        4,
+        5,
+        9,
+        85
+      ]
+    },
+    "lib/Charts/Pyramid/Pyramid.js": {
+      "expectCount": 4,
+      "actualCount": 0,
+      "undocumentLines": [
+        4,
+        5,
+        9,
+        92
+      ]
+    },
+    "lib/Charts/Spiderweb/Spiderweb.js": {
+      "expectCount": 4,
+      "actualCount": 0,
+      "undocumentLines": [
+        4,
+        5,
+        9,
+        60
+      ]
+    },
+    "lib/Charts/Sunburst/Sunburst.js": {
+      "expectCount": 4,
+      "actualCount": 0,
+      "undocumentLines": [
+        5,
+        6,
+        10,
+        1452
+      ]
+    },
+    "lib/Charts/TreeMap/LargeTreeMap.js": {
+      "expectCount": 3,
+      "actualCount": 0,
+      "undocumentLines": [
+        7,
+        8,
+        103
+      ]
+    },
+    "lib/Charts/TreeMap/LevelsTreeMap.js": {
+      "expectCount": 3,
+      "actualCount": 0,
+      "undocumentLines": [
+        5,
+        6,
+        87
+      ]
+    },
+    "lib/Containers/Alerts/Dismiss.js": {
+      "expectCount": 4,
+      "actualCount": 0,
+      "undocumentLines": [
+        4,
+        6,
+        22,
+        29
+      ]
+    },
+    "lib/Containers/Card/Card.js": {
+      "expectCount": 2,
+      "actualCount": 1,
+      "undocumentLines": [
+        9
+      ]
+    },
+    "lib/Containers/Card/Elements/CardBody.js": {
+      "expectCount": 2,
+      "actualCount": 1,
+      "undocumentLines": [
+        9
+      ]
+    },
+    "lib/Containers/Card/Elements/CardFooter.js": {
+      "expectCount": 2,
+      "actualCount": 1,
+      "undocumentLines": [
+        9
+      ]
+    },
+    "lib/Containers/Card/Elements/CardHeader.js": {
+      "expectCount": 2,
+      "actualCount": 1,
+      "undocumentLines": [
+        9
+      ]
+    },
+    "lib/Containers/Card/Elements/CardImage.js": {
+      "expectCount": 3,
+      "actualCount": 1,
+      "undocumentLines": [
+        10,
+        14
+      ]
+    },
+    "lib/Containers/Card/Elements/CardLink.js": {
+      "expectCount": 2,
+      "actualCount": 1,
+      "undocumentLines": [
+        9
+      ]
+    },
+    "lib/Containers/Card/Elements/CardList.js": {
+      "expectCount": 4,
+      "actualCount": 1,
+      "undocumentLines": [
+        10,
+        20,
+        24
+      ]
+    },
+    "lib/Containers/Card/Elements/CardSubtitle.js": {
+      "expectCount": 2,
+      "actualCount": 1,
+      "undocumentLines": [
+        9
+      ]
+    },
+    "lib/Containers/Card/Elements/CardText.js": {
+      "expectCount": 2,
+      "actualCount": 1,
+      "undocumentLines": [
+        9
+      ]
+    },
+    "lib/Containers/Card/Elements/CardTitle.js": {
+      "expectCount": 2,
+      "actualCount": 1,
+      "undocumentLines": [
+        9
+      ]
+    },
+    "lib/Containers/Modal.js": {
+      "expectCount": 2,
+      "actualCount": 0,
+      "undocumentLines": [
+        5,
+        6
+      ]
+    },
+    "lib/Containers/Notice/Notice.js": {
+      "expectCount": 2,
+      "actualCount": 0,
+      "undocumentLines": [
+        4,
+        5
+      ]
+    },
+    "lib/Form/Button/Button.js": {
+      "expectCount": 3,
+      "actualCount": 0,
+      "undocumentLines": [
+        5,
+        7,
+        30
+      ]
+    },
+    "lib/Form/DropDowns/DropDown.js": {
+      "expectCount": 5,
+      "actualCount": 0,
+      "undocumentLines": [
+        4,
+        6,
+        20,
+        26,
+        32
+      ]
+    },
+    "lib/Form/Input/Input.js": {
+      "expectCount": 2,
+      "actualCount": 0,
+      "undocumentLines": [
+        5,
+        6
+      ]
+    },
+    "lib/Form/Select/Select.js": {
+      "expectCount": 2,
+      "actualCount": 0,
+      "undocumentLines": [
+        6,
+        7
+      ]
+    },
+    "lib/Form/Textarea/Textarea.js": {
+      "expectCount": 2,
+      "actualCount": 0,
+      "undocumentLines": [
+        5,
+        6
+      ]
+    },
+    "lib/Form/Toggle/Toggle.js": {
+      "expectCount": 5,
+      "actualCount": 0,
+      "undocumentLines": [
+        5,
+        7,
+        12,
+        21,
+        25
+      ]
+    },
+    "lib/Grid/Row.js": {
+      "expectCount": 3,
+      "actualCount": 0,
+      "undocumentLines": [
+        4,
+        6,
+        12
+      ]
+    },
+    "lib/Helpers/index.js": {
+      "expectCount": 2,
+      "actualCount": 2,
+      "undocumentLines": []
+    },
+    "lib/Media/AudioNat/Audio_Nat.js": {
+      "expectCount": 2,
+      "actualCount": 0,
+      "undocumentLines": [
+        5,
+        6
+      ]
+    },
+    "lib/Media/DailymotionPlayer.js": {
+      "expectCount": 2,
+      "actualCount": 0,
+      "undocumentLines": [
+        4,
+        5
+      ]
+    },
+    "lib/Media/MediaIcon/MediaIcon.js": {
+      "expectCount": 3,
+      "actualCount": 0,
+      "undocumentLines": [
+        11,
+        13,
+        28
+      ]
+    },
+    "lib/Media/VideoNat/Video_Nat.js": {
+      "expectCount": 2,
+      "actualCount": 0,
+      "undocumentLines": [
+        4,
+        5
+      ]
+    },
+    "lib/Media/VimeoPlayer.js": {
+      "expectCount": 2,
+      "actualCount": 0,
+      "undocumentLines": [
+        4,
+        5
+      ]
+    },
+    "lib/Media/YoutubePlayer.js": {
+      "expectCount": 2,
+      "actualCount": 0,
+      "undocumentLines": [
+        4,
+        5
+      ]
+    },
+    "lib/Misc/ButtonGroup/ButtonGroup.js": {
+      "expectCount": 3,
+      "actualCount": 3,
+      "undocumentLines": []
+    },
+    "lib/Misc/Element.js": {
+      "expectCount": 5,
+      "actualCount": 1,
+      "undocumentLines": [
+        10,
+        16,
+        20,
+        24
+      ]
+    },
+    "lib/Misc/Facet/Facet.js": {
+      "expectCount": 6,
+      "actualCount": 1,
+      "undocumentLines": [
+        10,
+        15,
+        22,
+        26,
+        31
+      ]
+    },
+    "lib/Misc/Facet/FacetBody.js": {
+      "expectCount": 3,
+      "actualCount": 1,
+      "undocumentLines": [
+        9,
+        13
+      ]
+    },
+    "lib/Misc/Facet/FacetHeader.js": {
+      "expectCount": 9,
+      "actualCount": 0,
+      "undocumentLines": [
+        6,
+        7,
+        9,
+        15,
+        22,
+        34,
+        38,
+        45,
+        55
+      ]
+    },
+    "lib/Misc/InfluencerMedia/InfluencerMedia.js": {
+      "expectCount": 5,
+      "actualCount": 0,
+      "undocumentLines": [
+        8,
+        9,
+        14,
+        18,
+        26
+      ]
+    },
+    "lib/Misc/InfluencerMedia/InfluencerMediaOverlap.js": {
+      "expectCount": 7,
+      "actualCount": 0,
+      "undocumentLines": [
+        9,
+        10,
+        15,
+        19,
+        23,
+        27,
+        31
+      ]
+    },
+    "lib/Misc/InputGroup/InputGroup.js": {
+      "expectCount": 3,
+      "actualCount": 0,
+      "undocumentLines": [
+        6,
+        7,
+        13
+      ]
+    },
+    "lib/Misc/Mention/Mention.js": {
+      "expectCount": 2,
+      "actualCount": 0,
+      "undocumentLines": [
+        6,
+        8
+      ]
+    },
+    "lib/Misc/Metrics/LegendArrow.js": {
+      "expectCount": 3,
+      "actualCount": 0,
+      "undocumentLines": [
+        6,
+        8,
+        28
+      ]
+    },
+    "lib/Misc/Metrics/LegendBox.js": {
+      "expectCount": 2,
+      "actualCount": 1,
+      "undocumentLines": [
+        8
+      ]
+    },
+    "lib/Misc/Metrics/LegendCircle.js": {
+      "expectCount": 2,
+      "actualCount": 0,
+      "undocumentLines": [
+        3,
+        4
+      ]
+    },
+    "lib/Misc/Progress/MultiBars.js": {
+      "expectCount": 9,
+      "actualCount": 0,
+      "undocumentLines": [
+        8,
+        9,
+        14,
+        18,
+        22,
+        31,
+        36,
+        40,
+        51
+      ]
+    },
+    "lib/Misc/Progress/MultiBars.spec.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        8
+      ]
+    },
+    "lib/Misc/Progress/Progress.js": {
+      "expectCount": 5,
+      "actualCount": 4,
+      "undocumentLines": [
+        15
+      ]
+    },
+    "lib/Misc/RangeSlider/RangeSlideBar.js": {
+      "expectCount": 5,
+      "actualCount": 0,
+      "undocumentLines": [
+        8,
+        9,
+        11,
+        20,
+        26
+      ]
+    },
+    "lib/Misc/_RangeSlideBar/RangeSlideBar.js": {
+      "expectCount": 5,
+      "actualCount": 0,
+      "undocumentLines": [
+        8,
+        9,
+        11,
+        20,
+        26
+      ]
+    },
+    "lib/Navigation/Navbar/Navbar.js": {
+      "expectCount": 4,
+      "actualCount": 0,
+      "undocumentLines": [
+        6,
+        7,
+        18,
+        29
+      ]
+    },
+    "lib/Navigation/Tabs/Tabs.js": {
+      "expectCount": 8,
+      "actualCount": 1,
+      "undocumentLines": [
+        10,
+        20,
+        24,
+        28,
+        32,
+        44,
+        48
+      ]
+    },
+    "lib/Navigation/Tabs/Tabs.spec.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        8
+      ]
+    },
+    "lib/Table/Simple.js": {
+      "expectCount": 7,
+      "actualCount": 6,
+      "undocumentLines": [
+        18
+      ]
+    },
+    "lib/Typography/Abbrev/Abbrev.js": {
+      "expectCount": 2,
+      "actualCount": 2,
+      "undocumentLines": []
+    },
+    "lib/Typography/Block/Block.js": {
+      "expectCount": 2,
+      "actualCount": 0,
+      "undocumentLines": [
+        5,
+        6
+      ]
+    },
+    "lib/Typography/Display/Display.js": {
+      "expectCount": 2,
+      "actualCount": 0,
+      "undocumentLines": [
+        5,
+        6
+      ]
+    },
+    "lib/Typography/Headings/Headings.js": {
+      "expectCount": 2,
+      "actualCount": 2,
+      "undocumentLines": []
+    },
+    "lib/Typography/Icon.js": {
+      "expectCount": 7,
+      "actualCount": 4,
+      "undocumentLines": [
+        20,
+        21,
+        23
+      ]
+    },
+    "lib/Typography/Lead/Lead.js": {
+      "expectCount": 2,
+      "actualCount": 0,
+      "undocumentLines": [
+        5,
+        6
+      ]
+    },
+    "lib/Typography/Snippet.js": {
+      "expectCount": 3,
+      "actualCount": 0,
+      "undocumentLines": [
+        5,
+        7,
+        11
+      ]
+    }
+  }
+}

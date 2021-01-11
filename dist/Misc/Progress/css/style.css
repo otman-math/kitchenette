@@ -1,0 +1,19 @@
+.progress-xs {
+  height: 5px !important;
+}
+
+.progress-sm {
+  height: 10px !important;
+}
+
+.progress-md {
+  height: 20px !important;
+}
+
+.progress-lg {
+  height: 40px !important;
+}
+
+.multibar {
+  border-radius: 4px !important;
+}

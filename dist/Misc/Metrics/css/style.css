@@ -1,0 +1,30 @@
+.legend-arrows{
+    overflow: hidden;
+}
+
+.legend-arrows:not(:first-child){
+    margin-left: -5px;
+}
+
+.legend-arrows:first-child{
+    border-bottom-left-radius: 7px;
+    border-top-left-radius: 7px;
+    -webkit-clip-path: polygon(0% 0%, 95% 0%, 100% 50%, 95% 100%, 0% 100%);
+    clip-path: polygon(0% 0%, 95% 0%, 100% 50%, 95% 100%, 0% 100%);
+}
+
+.legend-arrows:last-child{
+    border-bottom-right-radius: 7px;
+    border-top-right-radius: 7px;
+    -webkit-clip-path: polygon(100% 0, 100% 100%, 0% 100%, 5% 50%, 0% 0%);
+    clip-path: polygon(100% 0, 100% 100%, 0% 100%, 5% 50%, 0% 0%);
+}
+
+.legend-arrows:not(:first-child):not(:last-child){
+    -webkit-clip-path: polygon(95% 0%, 100% 50%, 95% 100%, 0% 100%, 5% 50%, 0% 0%);
+    clip-path: polygon(95% 0%, 100% 50%, 95% 100%, 0% 100%, 5% 50%, 0% 0%);
+}
+
+.legend-arrows:not(:first-child)>.row{
+    padding-left: 5%;
+}

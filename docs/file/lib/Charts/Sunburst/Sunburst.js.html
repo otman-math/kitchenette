@@ -1,0 +1,1578 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../../../">
+  <title data-ice="title">lib/Charts/Sunburst/Sunburst.js | Digimind Kitchenette</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+</head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./" style="display: flex; align-items: center;"><img src="./image/brand_logo.svg" style="width:34px;"></a>
+  <a href="./manual/index.html" data-ice="manualHeaderLink">Manual</a>
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  <a href="test.html" data-ice="testLink">Test</a>
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+<a href="https://gitlab.digimind.tech/digi/libs/frontend/Kitchenette.git">Repository</a></header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#charts-activity">Charts/Activity</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/lib/Charts/Activity/Activity.js~Activity.html">Activity</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#charts-area">Charts/Area</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/lib/Charts/Area/Area.js~Area.html">Area</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#charts-bar">Charts/Bar</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/lib/Charts/Bar/Bar.js~Bar.html">Bar</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#charts-bubble">Charts/Bubble</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/lib/Charts/Bubble/Bubble.js~Bubble.html">Bubble</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#charts-cloud">Charts/Cloud</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/lib/Charts/Cloud/Cloud.js~Cloud.html">Cloud</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#charts-donut">Charts/Donut</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/lib/Charts/Donut/Donut.js~Donut.html">Donut</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/lib/Charts/Donut/SemiCircle.js~SemiCircle.html">SemiCircle</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#charts-line">Charts/Line</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/lib/Charts/Line/Line.js~Line.html">Line</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#charts-pie">Charts/Pie</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/lib/Charts/Pie/Pie.js~Pie.html">Pie</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#charts-pyramid">Charts/Pyramid</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/lib/Charts/Pyramid/Pyramid.js~Pyramid.html">Pyramid</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#charts-spiderweb">Charts/Spiderweb</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/lib/Charts/Spiderweb/Spiderweb.js~Spiderweb.html">Spiderweb</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#charts-sunburst">Charts/Sunburst</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/lib/Charts/Sunburst/Sunburst.js~Sunburst.html">Sunburst</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#charts-treemap">Charts/TreeMap</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/lib/Charts/TreeMap/LargeTreeMap.js~LargeTreeMap.html">LargeTreeMap</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/lib/Charts/TreeMap/LevelsTreeMap.js~LevelsTreeMap.html">LevelsTreeMap</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#containers">Containers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/lib/Containers/Modal.js~Modal.html">Modal</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#containers-alerts">Containers/Alerts</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/lib/Containers/Alerts/Dismiss.js~Dismiss.html">Dismiss</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#containers-card">Containers/Card</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/lib/Containers/Card/Card.js~Card.html">Card</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#containers-card-elements">Containers/Card/Elements</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/lib/Containers/Card/Elements/CardBody.js~CardBody.html">CardBody</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/lib/Containers/Card/Elements/CardFooter.js~CardFooter.html">CardFooter</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/lib/Containers/Card/Elements/CardHeader.js~CardHeader.html">CardHeader</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/lib/Containers/Card/Elements/CardImage.js~CardImage.html">CardImage</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/lib/Containers/Card/Elements/CardLink.js~CardLink.html">CardLink</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/lib/Containers/Card/Elements/CardList.js~CardList.html">CardList</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/lib/Containers/Card/Elements/CardSubtitle.js~CardSubtitle.html">CardSubtitle</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/lib/Containers/Card/Elements/CardText.js~CardText.html">CardText</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/lib/Containers/Card/Elements/CardTitle.js~CardTitle.html">CardTitle</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#containers-notice">Containers/Notice</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/lib/Containers/Notice/Notice.js~Notice.html">Notice</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#form-button">Form/Button</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/lib/Form/Button/Button.js~Button.html">Button</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#form-dropdowns">Form/DropDowns</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/lib/Form/DropDowns/DropDown.js~DropDown.html">DropDown</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#form-input">Form/Input</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/lib/Form/Input/Input.js~Input.html">Input</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#form-select">Form/Select</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/lib/Form/Select/Select.js~Select.html">Select</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#form-textarea">Form/Textarea</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/lib/Form/Textarea/Textarea.js~TextArea.html">TextArea</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#form-toggle">Form/Toggle</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/lib/Form/Toggle/Toggle.js~Toggle.html">Toggle</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#grid">Grid</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/lib/Grid/Row.js~Row.html">Row</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#helpers">Helpers</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getClasses">getClasses</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-renderHead">renderHead</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#media">Media</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/lib/Media/DailymotionPlayer.js~DailymotionPlayer.html">DailymotionPlayer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/lib/Media/VimeoPlayer.js~VimeoPlayer.html">VimeoPlayer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/lib/Media/YoutubePlayer.js~YoutubePlayer.html">YoutubePlayer</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#media-audionat">Media/AudioNat</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/lib/Media/AudioNat/Audio_Nat.js~Audio_Nat.html">Audio_Nat</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#media-mediaicon">Media/MediaIcon</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/lib/Media/MediaIcon/MediaIcon.js~MediaIcon.html">MediaIcon</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#media-videonat">Media/VideoNat</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/lib/Media/VideoNat/Video_Nat.js~Video_Nat.html">Video_Nat</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#misc">Misc</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/lib/Misc/Element.js~Element.html">Element</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#misc-buttongroup">Misc/ButtonGroup</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/lib/Misc/ButtonGroup/ButtonGroup.js~ButtonGroup.html">ButtonGroup</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#misc-facet">Misc/Index</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/lib/Misc/Facet/Facet.js~Facet.html">Index</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/lib/Misc/Facet/FacetBody.js~FacetBody.html">FacetBody</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/lib/Misc/Facet/FacetHeader.js~FacetHeader.html">FacetHeader</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#misc-influencermedia">Misc/InfluencerMedia</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/lib/Misc/InfluencerMedia/InfluencerMedia.js~InfluencerMedia.html">InfluencerMedia</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/lib/Misc/InfluencerMedia/InfluencerMediaOverlap.js~InfluencerMediaOverlap.html">InfluencerMediaOverlap</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#misc-inputgroup">Misc/InputGroup</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/lib/Misc/InputGroup/InputGroup.js~InputGroup.html">InputGroup</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#misc-mention">Misc/Mention</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/lib/Misc/Mention/Mention.js~Mention.html">Mention</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#misc-metrics">Misc/Metrics</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/lib/Misc/Metrics/LegendArrow.js~LegendArrow.html">LegendArrow</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/lib/Misc/Metrics/LegendBox.js~LegendBox.html">LegendBox</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/lib/Misc/Metrics/LegendCircle.js~LegendCircle.html">LegendCircle</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#misc-progress">Misc/Progress</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/lib/Misc/Progress/MultiBars.js~MultiBars.html">MultiBars</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/lib/Misc/Progress/Progress.js~Progress.html">Progress</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#misc-rangeslider">Misc/RangeSlider</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/lib/Misc/RangeSlider/RangeSlideBar.js~RangeSlide.html">RangeSlide</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#misc--rangeslidebar">Misc/_RangeSlideBar</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/lib/Misc/_RangeSlideBar/RangeSlideBar.js~RangeSlideBar.html">RangeSlideBar</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#navigation-navbar">Navigation/Navbar</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/lib/Navigation/Navbar/Navbar.js~Navbar.html">Navbar</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#navigation-tabs">Navigation/Tabs</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/lib/Navigation/Tabs/Tabs.js~Tabs.html">Tabs</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#table">Table</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/lib/Table/Simple.js~Table.html">Table</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#typography">Typography</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/lib/Typography/Icon.js~Icon.html">Icon</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/lib/Typography/Snippet.js~Snippet.html">Snippet</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#typography-abbrev">Typography/Abbrev</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/lib/Typography/Abbrev/Abbrev.js~Abbrev.html">Abbrev</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#typography-block">Typography/Block</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/lib/Typography/Block/Block.js~Block.html">Block</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#typography-display">Typography/Display</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/lib/Typography/Display/Display.js~Display.html">Display</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#typography-headings">Typography/Headings</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/lib/Typography/Headings/Headings.js~Headings.html">Headings</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#typography-lead">Typography/Lead</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/lib/Typography/Lead/Lead.js~Lead.html">Lead</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">lib/Charts/Sunburst/Sunburst.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import React, {Component} from &quot;react&quot;;
+import Highcharts from &apos;highcharts&apos;;
+import HighChartSunburst from &apos;highcharts/modules/sunburst&apos;;
+
+export default class Sunburst extends Component {
+  constructor(props) {
+    super(props);
+  }
+
+  componentDidMount() {
+    HighChartSunburst(Highcharts);
+    const data = [
+      {
+        &apos;id&apos;: &apos;0.0&apos;,
+        &apos;parent&apos;: &apos;&apos;,
+        &apos;name&apos;: &apos;The World&apos;
+      }, {
+        &apos;id&apos;: &apos;1.3&apos;,
+        &apos;parent&apos;: &apos;0.0&apos;,
+        &apos;name&apos;: &apos;Asia&apos;
+      }, {
+        &apos;id&apos;: &apos;1.1&apos;,
+        &apos;parent&apos;: &apos;0.0&apos;,
+        &apos;name&apos;: &apos;Africa&apos;
+      }, {
+        &apos;id&apos;: &apos;1.2&apos;,
+        &apos;parent&apos;: &apos;0.0&apos;,
+        &apos;name&apos;: &apos;America&apos;
+      }, {
+        &apos;id&apos;: &apos;1.4&apos;,
+        &apos;parent&apos;: &apos;0.0&apos;,
+        &apos;name&apos;: &apos;Europe&apos;
+      }, {
+        &apos;id&apos;: &apos;1.5&apos;,
+        &apos;parent&apos;: &apos;0.0&apos;,
+        &apos;name&apos;: &apos;Oceanic&apos;
+      },
+
+      /* Africa */
+      {
+        &apos;id&apos;: &apos;2.1&apos;,
+        &apos;parent&apos;: &apos;1.1&apos;,
+        &apos;name&apos;: &apos;Eastern Africa&apos;
+      },
+
+      {
+        &apos;id&apos;: &apos;3.1&apos;,
+        &apos;parent&apos;: &apos;2.1&apos;,
+        &apos;name&apos;: &apos;Ethiopia&apos;,
+        &apos;value&apos;: 104957438
+      }, {
+        &apos;id&apos;: &apos;3.2&apos;,
+        &apos;parent&apos;: &apos;2.1&apos;,
+        &apos;name&apos;: &apos;Tanzania&apos;,
+        &apos;value&apos;: 57310019
+      }, {
+        &apos;id&apos;: &apos;3.3&apos;,
+        &apos;parent&apos;: &apos;2.1&apos;,
+        &apos;name&apos;: &apos;Kenya&apos;,
+        &apos;value&apos;: 49699862
+      }, {
+        &apos;id&apos;: &apos;3.4&apos;,
+        &apos;parent&apos;: &apos;2.1&apos;,
+        &apos;name&apos;: &apos;Uganda&apos;,
+        &apos;value&apos;: 42862958
+      }, {
+        &apos;id&apos;: &apos;3.5&apos;,
+        &apos;parent&apos;: &apos;2.1&apos;,
+        &apos;name&apos;: &apos;Mozambique&apos;,
+        &apos;value&apos;: 29668834
+      }, {
+        &apos;id&apos;: &apos;3.6&apos;,
+        &apos;parent&apos;: &apos;2.1&apos;,
+        &apos;name&apos;: &apos;Madagascar&apos;,
+        &apos;value&apos;: 25570895
+      }, {
+        &apos;id&apos;: &apos;3.7&apos;,
+        &apos;parent&apos;: &apos;2.1&apos;,
+        &apos;name&apos;: &apos;Malawi&apos;,
+        &apos;value&apos;: 18622104
+      }, {
+        &apos;id&apos;: &apos;3.8&apos;,
+        &apos;parent&apos;: &apos;2.1&apos;,
+        &apos;name&apos;: &apos;Zambia&apos;,
+        &apos;value&apos;: 17094130
+      }, {
+        &apos;id&apos;: &apos;3.9&apos;,
+        &apos;parent&apos;: &apos;2.1&apos;,
+        &apos;name&apos;: &apos;Zimbabwe&apos;,
+        &apos;value&apos;: 16529904
+      }, {
+        &apos;id&apos;: &apos;3.10&apos;,
+        &apos;parent&apos;: &apos;2.1&apos;,
+        &apos;name&apos;: &apos;Somalia&apos;,
+        &apos;value&apos;: 14742523
+      }, {
+        &apos;id&apos;: &apos;3.11&apos;,
+        &apos;parent&apos;: &apos;2.1&apos;,
+        &apos;name&apos;: &apos;South Sudan&apos;,
+        &apos;value&apos;: 12575714
+      }, {
+        &apos;id&apos;: &apos;3.12&apos;,
+        &apos;parent&apos;: &apos;2.1&apos;,
+        &apos;name&apos;: &apos;Rwanda&apos;,
+        &apos;value&apos;: 12208407
+      }, {
+        &apos;id&apos;: &apos;3.13&apos;,
+        &apos;parent&apos;: &apos;2.1&apos;,
+        &apos;name&apos;: &apos;Burundi&apos;,
+        &apos;value&apos;: 10864245
+      }, {
+        &apos;id&apos;: &apos;3.14&apos;,
+        &apos;parent&apos;: &apos;2.1&apos;,
+        &apos;name&apos;: &apos;Eritrea&apos;,
+        &apos;value&apos;: 5068831
+      }, {
+        &apos;id&apos;: &apos;3.15&apos;,
+        &apos;parent&apos;: &apos;2.1&apos;,
+        &apos;name&apos;: &apos;Mauritius&apos;,
+        &apos;value&apos;: 1265138
+      }, {
+        &apos;id&apos;: &apos;3.16&apos;,
+        &apos;parent&apos;: &apos;2.1&apos;,
+        &apos;name&apos;: &apos;Djibouti&apos;,
+        &apos;value&apos;: 956985
+      }, {
+        &apos;id&apos;: &apos;3.17&apos;,
+        &apos;parent&apos;: &apos;2.1&apos;,
+        &apos;name&apos;: &apos;R&#xE9;union&apos;,
+        &apos;value&apos;: 876562
+      }, {
+        &apos;id&apos;: &apos;3.18&apos;,
+        &apos;parent&apos;: &apos;2.1&apos;,
+        &apos;name&apos;: &apos;Comoros&apos;,
+        &apos;value&apos;: 813912
+      }, {
+        &apos;id&apos;: &apos;3.19&apos;,
+        &apos;parent&apos;: &apos;2.1&apos;,
+        &apos;name&apos;: &apos;Mayotte&apos;,
+        &apos;value&apos;: 253045
+      }, {
+        &apos;id&apos;: &apos;3.20&apos;,
+        &apos;parent&apos;: &apos;2.1&apos;,
+        &apos;name&apos;: &apos;Seychelles&apos;,
+        &apos;value&apos;: 94737
+      },
+
+      {
+        &apos;id&apos;: &apos;2.5&apos;,
+        &apos;parent&apos;: &apos;1.1&apos;,
+        &apos;name&apos;: &apos;Western Africa&apos;
+      },
+
+      {
+        &apos;id&apos;: &apos;3.42&apos;,
+        &apos;parent&apos;: &apos;2.5&apos;,
+        &apos;name&apos;: &apos;Nigeria&apos;,
+        &apos;value&apos;: 190886311
+      }, {
+        &apos;id&apos;: &apos;3.43&apos;,
+        &apos;parent&apos;: &apos;2.5&apos;,
+        &apos;name&apos;: &apos;Ghana&apos;,
+        &apos;value&apos;: 28833629
+      }, {
+        &apos;id&apos;: &apos;3.44&apos;,
+        &apos;parent&apos;: &apos;2.5&apos;,
+        &apos;name&apos;: &apos;C&#xF4;te Ivoire&apos;,
+        &apos;value&apos;: 24294750
+      }, {
+        &apos;id&apos;: &apos;3.45&apos;,
+        &apos;parent&apos;: &apos;2.5&apos;,
+        &apos;name&apos;: &apos;Niger&apos;,
+        &apos;value&apos;: 21477348
+      }, {
+        &apos;id&apos;: &apos;3.46&apos;,
+        &apos;parent&apos;: &apos;2.5&apos;,
+        &apos;name&apos;: &apos;Burkina Faso&apos;,
+        &apos;value&apos;: 19193382
+      }, {
+        &apos;id&apos;: &apos;3.47&apos;,
+        &apos;parent&apos;: &apos;2.5&apos;,
+        &apos;name&apos;: &apos;Mali&apos;,
+        &apos;value&apos;: 18541980
+      }, {
+        &apos;id&apos;: &apos;3.48&apos;,
+        &apos;parent&apos;: &apos;2.5&apos;,
+        &apos;name&apos;: &apos;Senegal&apos;,
+        &apos;value&apos;: 15850567
+      }, {
+        &apos;id&apos;: &apos;3.49&apos;,
+        &apos;parent&apos;: &apos;2.5&apos;,
+        &apos;name&apos;: &apos;Guinea&apos;,
+        &apos;value&apos;: 12717176
+      }, {
+        &apos;id&apos;: &apos;3.50&apos;,
+        &apos;parent&apos;: &apos;2.5&apos;,
+        &apos;name&apos;: &apos;Benin&apos;,
+        &apos;value&apos;: 11175692
+      }, {
+        &apos;id&apos;: &apos;3.51&apos;,
+        &apos;parent&apos;: &apos;2.5&apos;,
+        &apos;name&apos;: &apos;Togo&apos;,
+        &apos;value&apos;: 7797694
+      }, {
+        &apos;id&apos;: &apos;3.52&apos;,
+        &apos;parent&apos;: &apos;2.5&apos;,
+        &apos;name&apos;: &apos;Sierra Leone&apos;,
+        &apos;value&apos;: 7557212
+      }, {
+        &apos;id&apos;: &apos;3.53&apos;,
+        &apos;parent&apos;: &apos;2.5&apos;,
+        &apos;name&apos;: &apos;Liberia&apos;,
+        &apos;value&apos;: 4731906
+      }, {
+        &apos;id&apos;: &apos;3.54&apos;,
+        &apos;parent&apos;: &apos;2.5&apos;,
+        &apos;name&apos;: &apos;Mauritania&apos;,
+        &apos;value&apos;: 4420184
+      }, {
+        &apos;id&apos;: &apos;3.55&apos;,
+        &apos;parent&apos;: &apos;2.5&apos;,
+        &apos;name&apos;: &apos;The Gambia&apos;,
+        &apos;value&apos;: 2100568
+      }, {
+        &apos;id&apos;: &apos;3.56&apos;,
+        &apos;parent&apos;: &apos;2.5&apos;,
+        &apos;name&apos;: &apos;Guinea-Bissau&apos;,
+        &apos;value&apos;: 1861283
+      }, {
+        &apos;id&apos;: &apos;3.57&apos;,
+        &apos;parent&apos;: &apos;2.5&apos;,
+        &apos;name&apos;: &apos;Cabo Verde&apos;,
+        &apos;value&apos;: 546388
+      }, {
+        &apos;id&apos;: &apos;3.58&apos;,
+        &apos;parent&apos;: &apos;2.5&apos;,
+        &apos;name&apos;: &apos;Saint Helena, Ascension and Tristan da Cunha&apos;,
+        &apos;value&apos;: 4049
+      },
+
+      {
+        &apos;id&apos;: &apos;2.3&apos;,
+        &apos;parent&apos;: &apos;1.1&apos;,
+        &apos;name&apos;: &apos;North Africa&apos;
+      },
+
+      {
+        &apos;id&apos;: &apos;3.30&apos;,
+        &apos;parent&apos;: &apos;2.3&apos;,
+        &apos;name&apos;: &apos;Egypt&apos;,
+        &apos;value&apos;: 97553151
+      }, {
+        &apos;id&apos;: &apos;3.31&apos;,
+        &apos;parent&apos;: &apos;2.3&apos;,
+        &apos;name&apos;: &apos;Algeria&apos;,
+        &apos;value&apos;: 41318142
+      }, {
+        &apos;id&apos;: &apos;3.32&apos;,
+        &apos;parent&apos;: &apos;2.3&apos;,
+        &apos;name&apos;: &apos;Sudan&apos;,
+        &apos;value&apos;: 40533330
+      }, {
+        &apos;id&apos;: &apos;3.33&apos;,
+        &apos;parent&apos;: &apos;2.3&apos;,
+        &apos;name&apos;: &apos;Morocco&apos;,
+        &apos;value&apos;: 35739580
+      }, {
+        &apos;id&apos;: &apos;3.34&apos;,
+        &apos;parent&apos;: &apos;2.3&apos;,
+        &apos;name&apos;: &apos;Tunisia&apos;,
+        &apos;value&apos;: 11532127
+      }, {
+        &apos;id&apos;: &apos;3.35&apos;,
+        &apos;parent&apos;: &apos;2.3&apos;,
+        &apos;name&apos;: &apos;Libya&apos;,
+        &apos;value&apos;: 6374616
+      }, {
+        &apos;id&apos;: &apos;3.36&apos;,
+        &apos;parent&apos;: &apos;2.3&apos;,
+        &apos;name&apos;: &apos;Western Sahara&apos;,
+        &apos;value&apos;: 552628
+      },
+
+      {
+        &apos;id&apos;: &apos;2.2&apos;,
+        &apos;parent&apos;: &apos;1.1&apos;,
+        &apos;name&apos;: &apos;Central Africa&apos;
+      },
+
+      {
+        &apos;id&apos;: &apos;3.21&apos;,
+        &apos;parent&apos;: &apos;2.2&apos;,
+        &apos;name&apos;: &apos;Democratic Republic of the Congo&apos;,
+        &apos;value&apos;: 81339988
+      }, {
+        &apos;id&apos;: &apos;3.22&apos;,
+        &apos;parent&apos;: &apos;2.2&apos;,
+        &apos;name&apos;: &apos;Angola&apos;,
+        &apos;value&apos;: 29784193
+      }, {
+        &apos;id&apos;: &apos;3.23&apos;,
+        &apos;parent&apos;: &apos;2.2&apos;,
+        &apos;name&apos;: &apos;Cameroon&apos;,
+        &apos;value&apos;: 24053727
+      }, {
+        &apos;id&apos;: &apos;3.24&apos;,
+        &apos;parent&apos;: &apos;2.2&apos;,
+        &apos;name&apos;: &apos;Chad&apos;,
+        &apos;value&apos;: 14899994
+      }, {
+        &apos;id&apos;: &apos;3.25&apos;,
+        &apos;parent&apos;: &apos;2.2&apos;,
+        &apos;name&apos;: &apos;Congo&apos;,
+        &apos;value&apos;: 5260750
+      }, {
+        &apos;id&apos;: &apos;3.26&apos;,
+        &apos;parent&apos;: &apos;2.2&apos;,
+        &apos;name&apos;: &apos;Central African Republic&apos;,
+        &apos;value&apos;: 4659080
+      }, {
+        &apos;id&apos;: &apos;3.27&apos;,
+        &apos;parent&apos;: &apos;2.2&apos;,
+        &apos;name&apos;: &apos;Gabon&apos;,
+        &apos;value&apos;: 2025137
+      }, {
+        &apos;id&apos;: &apos;3.28&apos;,
+        &apos;parent&apos;: &apos;2.2&apos;,
+        &apos;name&apos;: &apos;Equatorial Guinea&apos;,
+        &apos;value&apos;: 1267689
+      }, {
+        &apos;id&apos;: &apos;3.29&apos;,
+        &apos;parent&apos;: &apos;2.2&apos;,
+        &apos;name&apos;: &apos;Sao Tome and Principe&apos;,
+        &apos;value&apos;: 204327
+      },
+
+      {
+        &apos;id&apos;: &apos;2.4&apos;,
+        &apos;parent&apos;: &apos;1.1&apos;,
+        &apos;name&apos;: &apos;South America&apos;
+      },
+
+      {
+        &apos;id&apos;: &apos;3.37&apos;,
+        &apos;parent&apos;: &apos;2.4&apos;,
+        &apos;name&apos;: &apos;South Africa&apos;,
+        &apos;value&apos;: 56717156
+      }, {
+        &apos;id&apos;: &apos;3.38&apos;,
+        &apos;parent&apos;: &apos;2.4&apos;,
+        &apos;name&apos;: &apos;Namibia&apos;,
+        &apos;value&apos;: 2533794
+      }, {
+        &apos;id&apos;: &apos;3.39&apos;,
+        &apos;parent&apos;: &apos;2.4&apos;,
+        &apos;name&apos;: &apos;Botswana&apos;,
+        &apos;value&apos;: 2291661
+      }, {
+        &apos;id&apos;: &apos;3.40&apos;,
+        &apos;parent&apos;: &apos;2.4&apos;,
+        &apos;name&apos;: &apos;Lesotho&apos;,
+        &apos;value&apos;: 2233339
+      }, {
+        &apos;id&apos;: &apos;3.41&apos;,
+        &apos;parent&apos;: &apos;2.4&apos;,
+        &apos;name&apos;: &apos;Swaziland&apos;,
+        &apos;value&apos;: 1367254
+      },
+
+      /***********/
+
+      /* America */
+      {
+        &apos;id&apos;: &apos;2.9&apos;,
+        &apos;parent&apos;: &apos;1.2&apos;,
+        &apos;name&apos;: &apos;South America&apos;
+      },
+
+      {
+        &apos;id&apos;: &apos;3.98&apos;,
+        &apos;parent&apos;: &apos;2.9&apos;,
+        &apos;name&apos;: &apos;Brazil&apos;,
+        &apos;value&apos;: 209288278
+      }, {
+        &apos;id&apos;: &apos;3.99&apos;,
+        &apos;parent&apos;: &apos;2.9&apos;,
+        &apos;name&apos;: &apos;Colombia&apos;,
+        &apos;value&apos;: 49065615
+      }, {
+        &apos;id&apos;: &apos;3.100&apos;,
+        &apos;parent&apos;: &apos;2.9&apos;,
+        &apos;name&apos;: &apos;Argentina&apos;,
+        &apos;value&apos;: 44271041
+      }, {
+        &apos;id&apos;: &apos;3.101&apos;,
+        &apos;parent&apos;: &apos;2.9&apos;,
+        &apos;name&apos;: &apos;Peru&apos;,
+        &apos;value&apos;: 32165485
+      }, {
+        &apos;id&apos;: &apos;3.102&apos;,
+        &apos;parent&apos;: &apos;2.9&apos;,
+        &apos;name&apos;: &apos;Venezuela&apos;,
+        &apos;value&apos;: 31977065
+      }, {
+        &apos;id&apos;: &apos;3.103&apos;,
+        &apos;parent&apos;: &apos;2.9&apos;,
+        &apos;name&apos;: &apos;Chile&apos;,
+        &apos;value&apos;: 18054726
+      }, {
+        &apos;id&apos;: &apos;3.104&apos;,
+        &apos;parent&apos;: &apos;2.9&apos;,
+        &apos;name&apos;: &apos;Ecuador&apos;,
+        &apos;value&apos;: 16624858
+      }, {
+        &apos;id&apos;: &apos;3.105&apos;,
+        &apos;parent&apos;: &apos;2.9&apos;,
+        &apos;name&apos;: &apos;Bolivia&apos;,
+        &apos;value&apos;: 11051600
+      }, {
+        &apos;id&apos;: &apos;3.106&apos;,
+        &apos;parent&apos;: &apos;2.9&apos;,
+        &apos;name&apos;: &apos;Paraguay&apos;,
+        &apos;value&apos;: 6811297
+      }, {
+        &apos;id&apos;: &apos;3.107&apos;,
+        &apos;parent&apos;: &apos;2.9&apos;,
+        &apos;name&apos;: &apos;Uruguay&apos;,
+        &apos;value&apos;: 3456750
+      }, {
+        &apos;id&apos;: &apos;3.108&apos;,
+        &apos;parent&apos;: &apos;2.9&apos;,
+        &apos;name&apos;: &apos;Guyana&apos;,
+        &apos;value&apos;: 777859
+      }, {
+        &apos;id&apos;: &apos;3.109&apos;,
+        &apos;parent&apos;: &apos;2.9&apos;,
+        &apos;name&apos;: &apos;Suriname&apos;,
+        &apos;value&apos;: 563402
+      }, {
+        &apos;id&apos;: &apos;3.110&apos;,
+        &apos;parent&apos;: &apos;2.9&apos;,
+        &apos;name&apos;: &apos;French Guiana&apos;,
+        &apos;value&apos;: 282731
+      }, {
+        &apos;id&apos;: &apos;3.111&apos;,
+        &apos;parent&apos;: &apos;2.9&apos;,
+        &apos;name&apos;: &apos;Falkland Islands&apos;,
+        &apos;value&apos;: 2910
+      },
+
+      {
+        &apos;id&apos;: &apos;2.8&apos;,
+        &apos;parent&apos;: &apos;1.2&apos;,
+        &apos;name&apos;: &apos;Northern America&apos;
+      },
+
+      {
+        &apos;id&apos;: &apos;3.93&apos;,
+        &apos;parent&apos;: &apos;2.8&apos;,
+        &apos;name&apos;: &apos;United States&apos;,
+        &apos;value&apos;: 324459463
+      }, {
+        &apos;id&apos;: &apos;3.94&apos;,
+        &apos;parent&apos;: &apos;2.8&apos;,
+        &apos;name&apos;: &apos;Canada&apos;,
+        &apos;value&apos;: 36624199
+      }, {
+        &apos;id&apos;: &apos;3.95&apos;,
+        &apos;parent&apos;: &apos;2.8&apos;,
+        &apos;name&apos;: &apos;Bermuda&apos;,
+        &apos;value&apos;: 61349
+      }, {
+        &apos;id&apos;: &apos;3.96&apos;,
+        &apos;parent&apos;: &apos;2.8&apos;,
+        &apos;name&apos;: &apos;Greenland&apos;,
+        &apos;value&apos;: 56480
+      }, {
+        &apos;id&apos;: &apos;3.97&apos;,
+        &apos;parent&apos;: &apos;2.8&apos;,
+        &apos;name&apos;: &apos;Saint Pierre and Miquelon&apos;,
+        &apos;value&apos;: 6320
+      },
+
+      {
+        &apos;id&apos;: &apos;2.7&apos;,
+        &apos;parent&apos;: &apos;1.2&apos;,
+        &apos;name&apos;: &apos;Central America&apos;
+      },
+
+      {
+        &apos;id&apos;: &apos;3.85&apos;,
+        &apos;parent&apos;: &apos;2.7&apos;,
+        &apos;name&apos;: &apos;Mexico&apos;,
+        &apos;value&apos;: 129163276
+      }, {
+        &apos;id&apos;: &apos;3.86&apos;,
+        &apos;parent&apos;: &apos;2.7&apos;,
+        &apos;name&apos;: &apos;Guatemala&apos;,
+        &apos;value&apos;: 16913503
+      }, {
+        &apos;id&apos;: &apos;3.87&apos;,
+        &apos;parent&apos;: &apos;2.7&apos;,
+        &apos;name&apos;: &apos;Honduras&apos;,
+        &apos;value&apos;: 9265067
+      }, {
+        &apos;id&apos;: &apos;3.88&apos;,
+        &apos;parent&apos;: &apos;2.7&apos;,
+        &apos;name&apos;: &apos;El Salvador&apos;,
+        &apos;value&apos;: 6377853
+      }, {
+        &apos;id&apos;: &apos;3.89&apos;,
+        &apos;parent&apos;: &apos;2.7&apos;,
+        &apos;name&apos;: &apos;Nicaragua&apos;,
+        &apos;value&apos;: 6217581
+      }, {
+        &apos;id&apos;: &apos;3.90&apos;,
+        &apos;parent&apos;: &apos;2.7&apos;,
+        &apos;name&apos;: &apos;Costa Rica&apos;,
+        &apos;value&apos;: 4905769
+      }, {
+        &apos;id&apos;: &apos;3.91&apos;,
+        &apos;parent&apos;: &apos;2.7&apos;,
+        &apos;name&apos;: &apos;Panama&apos;,
+        &apos;value&apos;: 4098587
+      }, {
+        &apos;id&apos;: &apos;3.92&apos;,
+        &apos;parent&apos;: &apos;2.7&apos;,
+        &apos;name&apos;: &apos;Belize&apos;,
+        &apos;value&apos;: 374681
+      },
+
+      {
+        &apos;id&apos;: &apos;2.6&apos;,
+        &apos;parent&apos;: &apos;1.2&apos;,
+        &apos;name&apos;: &apos;Caribbean&apos;
+      },
+
+      {
+        &apos;id&apos;: &apos;3.59&apos;,
+        &apos;parent&apos;: &apos;2.6&apos;,
+        &apos;name&apos;: &apos;Cuba&apos;,
+        &apos;value&apos;: 11484636
+      }, {
+        &apos;id&apos;: &apos;3.60&apos;,
+        &apos;parent&apos;: &apos;2.6&apos;,
+        &apos;name&apos;: &apos;Haiti&apos;,
+        &apos;value&apos;: 10981229
+      }, {
+        &apos;id&apos;: &apos;3.61&apos;,
+        &apos;parent&apos;: &apos;2.6&apos;,
+        &apos;name&apos;: &apos;Dominican Republic&apos;,
+        &apos;value&apos;: 10766998
+      }, {
+        &apos;id&apos;: &apos;3.62&apos;,
+        &apos;parent&apos;: &apos;2.6&apos;,
+        &apos;name&apos;: &apos;Puerto Rico&apos;,
+        &apos;value&apos;: 3663131
+      }, {
+        &apos;id&apos;: &apos;3.63&apos;,
+        &apos;parent&apos;: &apos;2.6&apos;,
+        &apos;name&apos;: &apos;Jamaica&apos;,
+        &apos;value&apos;: 2890299
+      }, {
+        &apos;id&apos;: &apos;3.64&apos;,
+        &apos;parent&apos;: &apos;2.6&apos;,
+        &apos;name&apos;: &apos;Trinidad and Tobago&apos;,
+        &apos;value&apos;: 1369125
+      }, {
+        &apos;id&apos;: &apos;3.65&apos;,
+        &apos;parent&apos;: &apos;2.6&apos;,
+        &apos;name&apos;: &apos;Guadeloupe&apos;,
+        &apos;value&apos;: 449568
+      }, {
+        &apos;id&apos;: &apos;3.66&apos;,
+        &apos;parent&apos;: &apos;2.6&apos;,
+        &apos;name&apos;: &apos;Bahamas&apos;,
+        &apos;value&apos;: 395361
+      }, {
+        &apos;id&apos;: &apos;3.67&apos;,
+        &apos;parent&apos;: &apos;2.6&apos;,
+        &apos;name&apos;: &apos;Martinique&apos;,
+        &apos;value&apos;: 384896
+      }, {
+        &apos;id&apos;: &apos;3.68&apos;,
+        &apos;parent&apos;: &apos;2.6&apos;,
+        &apos;name&apos;: &apos;Barbados&apos;,
+        &apos;value&apos;: 285719
+      }, {
+        &apos;id&apos;: &apos;3.69&apos;,
+        &apos;parent&apos;: &apos;2.6&apos;,
+        &apos;name&apos;: &apos;Saint Lucia&apos;,
+        &apos;value&apos;: 178844
+      }, {
+        &apos;id&apos;: &apos;3.70&apos;,
+        &apos;parent&apos;: &apos;2.6&apos;,
+        &apos;name&apos;: &apos;Cura&#xE7;ao&apos;,
+        &apos;value&apos;: 160539
+      }, {
+        &apos;id&apos;: &apos;3.71&apos;,
+        &apos;parent&apos;: &apos;2.6&apos;,
+        &apos;name&apos;: &apos;Saint Vincent and the Grenadines&apos;,
+        &apos;value&apos;: 109897
+      }, {
+        &apos;id&apos;: &apos;3.72&apos;,
+        &apos;parent&apos;: &apos;2.6&apos;,
+        &apos;name&apos;: &apos;Grenada&apos;,
+        &apos;value&apos;: 107825
+      }, {
+        &apos;id&apos;: &apos;3.73&apos;,
+        &apos;parent&apos;: &apos;2.6&apos;,
+        &apos;name&apos;: &apos;Aruba&apos;,
+        &apos;value&apos;: 105264
+      }, {
+        &apos;id&apos;: &apos;3.74&apos;,
+        &apos;parent&apos;: &apos;2.6&apos;,
+        &apos;name&apos;: &apos;United States Virgin Islands&apos;,
+        &apos;value&apos;: 104901
+      }, {
+        &apos;id&apos;: &apos;3.75&apos;,
+        &apos;parent&apos;: &apos;2.6&apos;,
+        &apos;name&apos;: &apos;Antigua and Barbuda&apos;,
+        &apos;value&apos;: 102012
+      }, {
+        &apos;id&apos;: &apos;3.76&apos;,
+        &apos;parent&apos;: &apos;2.6&apos;,
+        &apos;name&apos;: &apos;Dominica&apos;,
+        &apos;value&apos;: 73925
+      }, {
+        &apos;id&apos;: &apos;3.77&apos;,
+        &apos;parent&apos;: &apos;2.6&apos;,
+        &apos;name&apos;: &apos;Cayman Islands&apos;,
+        &apos;value&apos;: 61559
+      }, {
+        &apos;id&apos;: &apos;3.78&apos;,
+        &apos;parent&apos;: &apos;2.6&apos;,
+        &apos;name&apos;: &apos;Saint Kitts and Nevis&apos;,
+        &apos;value&apos;: 55345
+      }, {
+        &apos;id&apos;: &apos;3.79&apos;,
+        &apos;parent&apos;: &apos;2.6&apos;,
+        &apos;name&apos;: &apos;Sint Maarten&apos;,
+        &apos;value&apos;: 40120
+      }, {
+        &apos;id&apos;: &apos;3.80&apos;,
+        &apos;parent&apos;: &apos;2.6&apos;,
+        &apos;name&apos;: &apos;Turks and Caicos Islands&apos;,
+        &apos;value&apos;: 35446
+      }, {
+        &apos;id&apos;: &apos;3.81&apos;,
+        &apos;parent&apos;: &apos;2.6&apos;,
+        &apos;name&apos;: &apos;British Virgin Islands&apos;,
+        &apos;value&apos;: 31196
+      }, {
+        &apos;id&apos;: &apos;3.82&apos;,
+        &apos;parent&apos;: &apos;2.6&apos;,
+        &apos;name&apos;: &apos;Caribbean Netherlands&apos;,
+        &apos;value&apos;: 25398
+      }, {
+        &apos;id&apos;: &apos;3.83&apos;,
+        &apos;parent&apos;: &apos;2.6&apos;,
+        &apos;name&apos;: &apos;Anguilla&apos;,
+        &apos;value&apos;: 14909
+      }, {
+        &apos;id&apos;: &apos;3.84&apos;,
+        &apos;parent&apos;: &apos;2.6&apos;,
+        &apos;name&apos;: &apos;Montserrat&apos;,
+        &apos;value&apos;: 5177
+      },
+      /***********/
+
+      /* Asia */
+      {
+        &apos;id&apos;: &apos;2.13&apos;,
+        &apos;parent&apos;: &apos;1.3&apos;,
+        &apos;name&apos;: &apos;Southern Asia&apos;
+      },
+
+      {
+        &apos;id&apos;: &apos;3.136&apos;,
+        &apos;parent&apos;: &apos;2.13&apos;,
+        &apos;name&apos;: &apos;India&apos;,
+        &apos;value&apos;: 1339180127
+      }, {
+        &apos;id&apos;: &apos;3.137&apos;,
+        &apos;parent&apos;: &apos;2.13&apos;,
+        &apos;name&apos;: &apos;Pakistan&apos;,
+        &apos;value&apos;: 197015955
+      }, {
+        &apos;id&apos;: &apos;3.138&apos;,
+        &apos;parent&apos;: &apos;2.13&apos;,
+        &apos;name&apos;: &apos;Bangladesh&apos;,
+        &apos;value&apos;: 164669751
+      }, {
+        &apos;id&apos;: &apos;3.139&apos;,
+        &apos;parent&apos;: &apos;2.13&apos;,
+        &apos;name&apos;: &apos;Iran&apos;,
+        &apos;value&apos;: 81162788
+      }, {
+        &apos;id&apos;: &apos;3.140&apos;,
+        &apos;parent&apos;: &apos;2.13&apos;,
+        &apos;name&apos;: &apos;Afghanistan&apos;,
+        &apos;value&apos;: 35530081
+      }, {
+        &apos;id&apos;: &apos;3.141&apos;,
+        &apos;parent&apos;: &apos;2.13&apos;,
+        &apos;name&apos;: &apos;Nepal&apos;,
+        &apos;value&apos;: 29304998
+      }, {
+        &apos;id&apos;: &apos;3.142&apos;,
+        &apos;parent&apos;: &apos;2.13&apos;,
+        &apos;name&apos;: &apos;Sri Lanka&apos;,
+        &apos;value&apos;: 20876917
+      }, {
+        &apos;id&apos;: &apos;3.143&apos;,
+        &apos;parent&apos;: &apos;2.13&apos;,
+        &apos;name&apos;: &apos;Bhutan&apos;,
+        &apos;value&apos;: 807610
+      }, {
+        &apos;id&apos;: &apos;3.144&apos;,
+        &apos;parent&apos;: &apos;2.13&apos;,
+        &apos;name&apos;: &apos;Maldives&apos;,
+        &apos;value&apos;: 436330
+      },
+
+      {
+        &apos;id&apos;: &apos;2.11&apos;,
+        &apos;parent&apos;: &apos;1.3&apos;,
+        &apos;name&apos;: &apos;Eastern Asia&apos;
+      },
+
+      {
+        &apos;id&apos;: &apos;3.117&apos;,
+        &apos;parent&apos;: &apos;2.11&apos;,
+        &apos;name&apos;: &apos;China&apos;,
+        &apos;value&apos;: 1409517397
+      }, {
+        &apos;id&apos;: &apos;3.118&apos;,
+        &apos;parent&apos;: &apos;2.11&apos;,
+        &apos;name&apos;: &apos;Japan&apos;,
+        &apos;value&apos;: 127484450
+      }, {
+        &apos;id&apos;: &apos;3.119&apos;,
+        &apos;parent&apos;: &apos;2.11&apos;,
+        &apos;name&apos;: &apos;South Korea&apos;,
+        &apos;value&apos;: 50982212
+      }, {
+        &apos;id&apos;: &apos;3.120&apos;,
+        &apos;parent&apos;: &apos;2.11&apos;,
+        &apos;name&apos;: &apos;North Korea&apos;,
+        &apos;value&apos;: 25490965
+      }, {
+        &apos;id&apos;: &apos;3.121&apos;,
+        &apos;parent&apos;: &apos;2.11&apos;,
+        &apos;name&apos;: &apos;Taiwan&apos;,
+        &apos;value&apos;: 23626456
+      }, {
+        &apos;id&apos;: &apos;3.122&apos;,
+        &apos;parent&apos;: &apos;2.11&apos;,
+        &apos;name&apos;: &apos;Hong Kong&apos;,
+        &apos;value&apos;: 7364883
+      }, {
+        &apos;id&apos;: &apos;3.123&apos;,
+        &apos;parent&apos;: &apos;2.11&apos;,
+        &apos;name&apos;: &apos;Mongolia&apos;,
+        &apos;value&apos;: 3075647
+      }, {
+        &apos;id&apos;: &apos;3.124&apos;,
+        &apos;parent&apos;: &apos;2.11&apos;,
+        &apos;name&apos;: &apos;Macau&apos;,
+        &apos;value&apos;: 622567
+      },
+
+      {
+        &apos;id&apos;: &apos;2.12&apos;,
+        &apos;parent&apos;: &apos;1.3&apos;,
+        &apos;name&apos;: &apos;South-Eastern Asia&apos;
+      },
+
+      {
+        &apos;id&apos;: &apos;3.125&apos;,
+        &apos;parent&apos;: &apos;2.12&apos;,
+        &apos;name&apos;: &apos;Indonesia&apos;,
+        &apos;value&apos;: 263991379
+      }, {
+        &apos;id&apos;: &apos;3.126&apos;,
+        &apos;parent&apos;: &apos;2.12&apos;,
+        &apos;name&apos;: &apos;Philippines&apos;,
+        &apos;value&apos;: 104918090
+      }, {
+        &apos;id&apos;: &apos;3.127&apos;,
+        &apos;parent&apos;: &apos;2.12&apos;,
+        &apos;name&apos;: &apos;Vietnam&apos;,
+        &apos;value&apos;: 95540800
+      }, {
+        &apos;id&apos;: &apos;3.128&apos;,
+        &apos;parent&apos;: &apos;2.12&apos;,
+        &apos;name&apos;: &apos;Thailand&apos;,
+        &apos;value&apos;: 69037513
+      }, {
+        &apos;id&apos;: &apos;3.129&apos;,
+        &apos;parent&apos;: &apos;2.12&apos;,
+        &apos;name&apos;: &apos;Myanmar&apos;,
+        &apos;value&apos;: 53370609
+      }, {
+        &apos;id&apos;: &apos;3.130&apos;,
+        &apos;parent&apos;: &apos;2.12&apos;,
+        &apos;name&apos;: &apos;Malaysia&apos;,
+        &apos;value&apos;: 31624264
+      }, {
+        &apos;id&apos;: &apos;3.131&apos;,
+        &apos;parent&apos;: &apos;2.12&apos;,
+        &apos;name&apos;: &apos;Cambodia&apos;,
+        &apos;value&apos;: 16005373
+      }, {
+        &apos;id&apos;: &apos;3.132&apos;,
+        &apos;parent&apos;: &apos;2.12&apos;,
+        &apos;name&apos;: &apos;Laos&apos;,
+        &apos;value&apos;: 6858160
+      }, {
+        &apos;id&apos;: &apos;3.133&apos;,
+        &apos;parent&apos;: &apos;2.12&apos;,
+        &apos;name&apos;: &apos;Singapore&apos;,
+        &apos;value&apos;: 5708844
+      }, {
+        &apos;id&apos;: &apos;3.134&apos;,
+        &apos;parent&apos;: &apos;2.12&apos;,
+        &apos;name&apos;: &apos;Timor-Leste&apos;,
+        &apos;value&apos;: 1296311
+      }, {
+        &apos;id&apos;: &apos;3.135&apos;,
+        &apos;parent&apos;: &apos;2.12&apos;,
+        &apos;name&apos;: &apos;Brunei&apos;,
+        &apos;value&apos;: 428697
+        // &apos;color&apos;: &apos;&apos;
+      },
+
+      {
+        &apos;id&apos;: &apos;2.14&apos;,
+        &apos;parent&apos;: &apos;1.3&apos;,
+        &apos;name&apos;: &apos;Western Asia&apos;
+      },
+
+      {
+        &apos;id&apos;: &apos;3.145&apos;,
+        &apos;parent&apos;: &apos;2.14&apos;,
+        &apos;name&apos;: &apos;Turkey&apos;,
+        &apos;value&apos;: 80745020
+      }, {
+        &apos;id&apos;: &apos;3.146&apos;,
+        &apos;parent&apos;: &apos;2.14&apos;,
+        &apos;name&apos;: &apos;Iraq&apos;,
+        &apos;value&apos;: 38274618
+      }, {
+        &apos;id&apos;: &apos;3.147&apos;,
+        &apos;parent&apos;: &apos;2.14&apos;,
+        &apos;name&apos;: &apos;Saudi Arabia&apos;,
+        &apos;value&apos;: 32938213
+      }, {
+        &apos;id&apos;: &apos;3.148&apos;,
+        &apos;parent&apos;: &apos;2.14&apos;,
+        &apos;name&apos;: &apos;Yemen&apos;,
+        &apos;value&apos;: 28250420
+      }, {
+        &apos;id&apos;: &apos;3.149&apos;,
+        &apos;parent&apos;: &apos;2.14&apos;,
+        &apos;name&apos;: &apos;Syria&apos;,
+        &apos;value&apos;: 18269868
+      }, {
+        &apos;id&apos;: &apos;3.150&apos;,
+        &apos;parent&apos;: &apos;2.14&apos;,
+        &apos;name&apos;: &apos;Azerbaijan&apos;,
+        &apos;value&apos;: 9827589
+      }, {
+        &apos;id&apos;: &apos;3.151&apos;,
+        &apos;parent&apos;: &apos;2.14&apos;,
+        &apos;name&apos;: &apos;Jordan&apos;,
+        &apos;value&apos;: 9702353
+      }, {
+        &apos;id&apos;: &apos;3.152&apos;,
+        &apos;parent&apos;: &apos;2.14&apos;,
+        &apos;name&apos;: &apos;United Arab Emirates&apos;,
+        &apos;value&apos;: 9400145
+      }, {
+        &apos;id&apos;: &apos;3.153&apos;,
+        &apos;parent&apos;: &apos;2.14&apos;,
+        &apos;name&apos;: &apos;Israel&apos;,
+        &apos;value&apos;: 8321570
+      }, {
+        &apos;id&apos;: &apos;3.154&apos;,
+        &apos;parent&apos;: &apos;2.14&apos;,
+        &apos;name&apos;: &apos;Lebanon&apos;,
+        &apos;value&apos;: 6082357
+      }, {
+        &apos;id&apos;: &apos;3.155&apos;,
+        &apos;parent&apos;: &apos;2.14&apos;,
+        &apos;name&apos;: &apos;Palestine&apos;,
+        &apos;value&apos;: 4920724
+      }, {
+        &apos;id&apos;: &apos;3.156&apos;,
+        &apos;parent&apos;: &apos;2.14&apos;,
+        &apos;name&apos;: &apos;Oman&apos;,
+        &apos;value&apos;: 4636262
+      }, {
+        &apos;id&apos;: &apos;3.157&apos;,
+        &apos;parent&apos;: &apos;2.14&apos;,
+        &apos;name&apos;: &apos;Kuwait&apos;,
+        &apos;value&apos;: 4136528
+      }, {
+        &apos;id&apos;: &apos;3.158&apos;,
+        &apos;parent&apos;: &apos;2.14&apos;,
+        &apos;name&apos;: &apos;Georgia&apos;,
+        &apos;value&apos;: 3912061
+      }, {
+        &apos;id&apos;: &apos;3.159&apos;,
+        &apos;parent&apos;: &apos;2.14&apos;,
+        &apos;name&apos;: &apos;Armenia&apos;,
+        &apos;value&apos;: 2930450
+      }, {
+        &apos;id&apos;: &apos;3.160&apos;,
+        &apos;parent&apos;: &apos;2.14&apos;,
+        &apos;name&apos;: &apos;Qatar&apos;,
+        &apos;value&apos;: 2639211
+      }, {
+        &apos;id&apos;: &apos;3.161&apos;,
+        &apos;parent&apos;: &apos;2.14&apos;,
+        &apos;name&apos;: &apos;Bahrain&apos;,
+        &apos;value&apos;: 1492584
+      },
+
+      {
+        &apos;id&apos;: &apos;2.10&apos;,
+        &apos;parent&apos;: &apos;1.3&apos;,
+        &apos;name&apos;: &apos;Central Asia&apos;
+      },
+
+      {
+        &apos;id&apos;: &apos;3.112&apos;,
+        &apos;parent&apos;: &apos;2.10&apos;,
+        &apos;name&apos;: &apos;Uzbekistan&apos;,
+        &apos;value&apos;: 31910641
+      }, {
+        &apos;id&apos;: &apos;3.113&apos;,
+        &apos;parent&apos;: &apos;2.10&apos;,
+        &apos;name&apos;: &apos;Kazakhstan&apos;,
+        &apos;value&apos;: 18204499
+      }, {
+        &apos;id&apos;: &apos;3.114&apos;,
+        &apos;parent&apos;: &apos;2.10&apos;,
+        &apos;name&apos;: &apos;Tajikistan&apos;,
+        &apos;value&apos;: 8921343
+      }, {
+        &apos;id&apos;: &apos;3.115&apos;,
+        &apos;parent&apos;: &apos;2.10&apos;,
+        &apos;name&apos;: &apos;Kyrgyzstan&apos;,
+        &apos;value&apos;: 6045117
+      }, {
+        &apos;id&apos;: &apos;3.116&apos;,
+        &apos;parent&apos;: &apos;2.10&apos;,
+        &apos;name&apos;: &apos;Turkmenistan&apos;,
+        &apos;value&apos;: 5758075
+      },
+      /***********/
+
+      /* Europe */
+      {
+        &apos;id&apos;: &apos;2.15&apos;,
+        &apos;parent&apos;: &apos;1.4&apos;,
+        &apos;name&apos;: &apos;Eastern Europe&apos;
+      },
+
+      {
+        &apos;id&apos;: &apos;3.162&apos;,
+        &apos;parent&apos;: &apos;2.15&apos;,
+        &apos;name&apos;: &apos;Russia&apos;,
+        &apos;value&apos;: 143989754
+      }, {
+        &apos;id&apos;: &apos;3.163&apos;,
+        &apos;parent&apos;: &apos;2.15&apos;,
+        &apos;name&apos;: &apos;Ukraine&apos;,
+        &apos;value&apos;: 44222947
+      }, {
+        &apos;id&apos;: &apos;3.164&apos;,
+        &apos;parent&apos;: &apos;2.15&apos;,
+        &apos;name&apos;: &apos;Poland&apos;,
+        &apos;value&apos;: 38170712
+      }, {
+        &apos;id&apos;: &apos;3.165&apos;,
+        &apos;parent&apos;: &apos;2.15&apos;,
+        &apos;name&apos;: &apos;Romania&apos;,
+        &apos;value&apos;: 19679306
+      }, {
+        &apos;id&apos;: &apos;3.166&apos;,
+        &apos;parent&apos;: &apos;2.15&apos;,
+        &apos;name&apos;: &apos;Czechia&apos;,
+        &apos;value&apos;: 10618303
+      }, {
+        &apos;id&apos;: &apos;3.167&apos;,
+        &apos;parent&apos;: &apos;2.15&apos;,
+        &apos;name&apos;: &apos;Hungary&apos;,
+        &apos;value&apos;: 9721559
+      }, {
+        &apos;id&apos;: &apos;3.168&apos;,
+        &apos;parent&apos;: &apos;2.15&apos;,
+        &apos;name&apos;: &apos;Belarus&apos;,
+        &apos;value&apos;: 9468338
+      }, {
+        &apos;id&apos;: &apos;3.169&apos;,
+        &apos;parent&apos;: &apos;2.15&apos;,
+        &apos;name&apos;: &apos;Bulgaria&apos;,
+        &apos;value&apos;: 7084571
+      }, {
+        &apos;id&apos;: &apos;3.170&apos;,
+        &apos;parent&apos;: &apos;2.15&apos;,
+        &apos;name&apos;: &apos;Slovakia&apos;,
+        &apos;value&apos;: 5447662
+      }, {
+        &apos;id&apos;: &apos;3.171&apos;,
+        &apos;parent&apos;: &apos;2.15&apos;,
+        &apos;name&apos;: &apos;Moldova&apos;,
+        &apos;value&apos;: 4051212
+      }, {
+        &apos;id&apos;: &apos;3.172&apos;,
+        &apos;parent&apos;: &apos;2.15&apos;,
+        &apos;name&apos;: &apos;Cyprus&apos;,
+        &apos;value&apos;: 1179551
+      },
+      {
+        &apos;id&apos;: &apos;2.16&apos;,
+        &apos;parent&apos;: &apos;1.4&apos;,
+        &apos;name&apos;: &apos;Northern Europe&apos;
+      },
+      {
+        &apos;id&apos;: &apos;3.173&apos;,
+        &apos;parent&apos;: &apos;2.16&apos;,
+        &apos;name&apos;: &apos;United Kingdom&apos;,
+        &apos;value&apos;: 66181585
+      }, {
+        &apos;id&apos;: &apos;3.174&apos;,
+        &apos;parent&apos;: &apos;2.16&apos;,
+        &apos;name&apos;: &apos;Sweden&apos;,
+        &apos;value&apos;: 9910701
+      }, {
+        &apos;id&apos;: &apos;3.175&apos;,
+        &apos;parent&apos;: &apos;2.16&apos;,
+        &apos;name&apos;: &apos;Denmark&apos;,
+        &apos;value&apos;: 5733551
+      }, {
+        &apos;id&apos;: &apos;3.176&apos;,
+        &apos;parent&apos;: &apos;2.16&apos;,
+        &apos;name&apos;: &apos;Finland&apos;,
+        &apos;value&apos;: 5523231
+      }, {
+        &apos;id&apos;: &apos;3.177&apos;,
+        &apos;parent&apos;: &apos;2.16&apos;,
+        &apos;name&apos;: &apos;Norway&apos;,
+        &apos;value&apos;: 5305383
+      }, {
+        &apos;id&apos;: &apos;3.178&apos;,
+        &apos;parent&apos;: &apos;2.16&apos;,
+        &apos;name&apos;: &apos;Ireland&apos;,
+        &apos;value&apos;: 4761657
+      }, {
+        &apos;id&apos;: &apos;3.179&apos;,
+        &apos;parent&apos;: &apos;2.16&apos;,
+        &apos;name&apos;: &apos;Lithuania&apos;,
+        &apos;value&apos;: 2890297
+      }, {
+        &apos;id&apos;: &apos;3.180&apos;,
+        &apos;parent&apos;: &apos;2.16&apos;,
+        &apos;name&apos;: &apos;Latvia&apos;,
+        &apos;value&apos;: 1949670
+      }, {
+        &apos;id&apos;: &apos;3.181&apos;,
+        &apos;parent&apos;: &apos;2.16&apos;,
+        &apos;name&apos;: &apos;Estonia&apos;,
+        &apos;value&apos;: 1309632
+      }, {
+        &apos;id&apos;: &apos;3.182&apos;,
+        &apos;parent&apos;: &apos;2.16&apos;,
+        &apos;name&apos;: &apos;Iceland&apos;,
+        &apos;value&apos;: 335025
+      }, {
+        &apos;id&apos;: &apos;3.183&apos;,
+        &apos;parent&apos;: &apos;2.16&apos;,
+        &apos;name&apos;: &apos;Guernsey and  Jersey&apos;,
+        &apos;value&apos;: 165314
+      }, {
+        &apos;id&apos;: &apos;3.184&apos;,
+        &apos;parent&apos;: &apos;2.16&apos;,
+        &apos;name&apos;: &apos;Isle of Man&apos;,
+        &apos;value&apos;: 84287
+      }, {
+        &apos;id&apos;: &apos;3.185&apos;,
+        &apos;parent&apos;: &apos;2.16&apos;,
+        &apos;name&apos;: &apos;Faroe Islands&apos;,
+        &apos;value&apos;: 49290
+      },
+
+      {
+        &apos;id&apos;: &apos;2.17&apos;,
+        &apos;parent&apos;: &apos;1.4&apos;,
+        &apos;name&apos;: &apos;Southern Europe&apos;
+      },
+
+      {
+        &apos;id&apos;: &apos;3.186&apos;,
+        &apos;parent&apos;: &apos;2.17&apos;,
+        &apos;name&apos;: &apos;Italy&apos;,
+        &apos;value&apos;: 59359900
+      }, {
+        &apos;id&apos;: &apos;3.187&apos;,
+        &apos;parent&apos;: &apos;2.17&apos;,
+        &apos;name&apos;: &apos;Spain&apos;,
+        &apos;value&apos;: 46354321
+      }, {
+        &apos;id&apos;: &apos;3.188&apos;,
+        &apos;parent&apos;: &apos;2.17&apos;,
+        &apos;name&apos;: &apos;Greece&apos;,
+        &apos;value&apos;: 11159773
+      }, {
+        &apos;id&apos;: &apos;3.189&apos;,
+        &apos;parent&apos;: &apos;2.17&apos;,
+        &apos;name&apos;: &apos;Portugal&apos;,
+        &apos;value&apos;: 10329506
+      }, {
+        &apos;id&apos;: &apos;3.190&apos;,
+        &apos;parent&apos;: &apos;2.17&apos;,
+        &apos;name&apos;: &apos;Serbia&apos;,
+        &apos;value&apos;: 8790574
+      }, {
+        &apos;id&apos;: &apos;3.191&apos;,
+        &apos;parent&apos;: &apos;2.17&apos;,
+        &apos;name&apos;: &apos;Croatia&apos;,
+        &apos;value&apos;: 4189353
+      }, {
+        &apos;id&apos;: &apos;3.192&apos;,
+        &apos;parent&apos;: &apos;2.17&apos;,
+        &apos;name&apos;: &apos;Bosnia and Herzegovina&apos;,
+        &apos;value&apos;: 3507017
+      }, {
+        &apos;id&apos;: &apos;3.193&apos;,
+        &apos;parent&apos;: &apos;2.17&apos;,
+        &apos;name&apos;: &apos;Albania&apos;,
+        &apos;value&apos;: 2930187
+      }, {
+        &apos;id&apos;: &apos;3.194&apos;,
+        &apos;parent&apos;: &apos;2.17&apos;,
+        &apos;name&apos;: &apos;Republic of Macedonia&apos;,
+        &apos;value&apos;: 2083160
+      }, {
+        &apos;id&apos;: &apos;3.195&apos;,
+        &apos;parent&apos;: &apos;2.17&apos;,
+        &apos;name&apos;: &apos;Slovenia&apos;,
+        &apos;value&apos;: 2079976
+      }, {
+        &apos;id&apos;: &apos;3.196&apos;,
+        &apos;parent&apos;: &apos;2.17&apos;,
+        &apos;name&apos;: &apos;Montenegro&apos;,
+        &apos;value&apos;: 628960
+      }, {
+        &apos;id&apos;: &apos;3.197&apos;,
+        &apos;parent&apos;: &apos;2.17&apos;,
+        &apos;name&apos;: &apos;Malta&apos;,
+        &apos;value&apos;: 430835
+      }, {
+        &apos;id&apos;: &apos;3.198&apos;,
+        &apos;parent&apos;: &apos;2.17&apos;,
+        &apos;name&apos;: &apos;Andorra&apos;,
+        &apos;value&apos;: 76965
+      }, {
+        &apos;id&apos;: &apos;3.199&apos;,
+        &apos;parent&apos;: &apos;2.17&apos;,
+        &apos;name&apos;: &apos;Gibraltar&apos;,
+        &apos;value&apos;: 34571
+      }, {
+        &apos;id&apos;: &apos;3.200&apos;,
+        &apos;parent&apos;: &apos;2.17&apos;,
+        &apos;name&apos;: &apos;San Marino&apos;,
+        &apos;value&apos;: 33400
+      }, {
+        &apos;id&apos;: &apos;3.201&apos;,
+        &apos;parent&apos;: &apos;2.17&apos;,
+        &apos;name&apos;: &apos;Vatican City&apos;,
+        &apos;value&apos;: 792
+      },
+
+      {
+        &apos;id&apos;: &apos;2.18&apos;,
+        &apos;parent&apos;: &apos;1.4&apos;,
+        &apos;name&apos;: &apos;Western Europe&apos;
+      },
+
+      {
+        &apos;id&apos;: &apos;3.202&apos;,
+        &apos;parent&apos;: &apos;2.18&apos;,
+        &apos;name&apos;: &apos;Germany&apos;,
+        &apos;value&apos;: 82114224
+      }, {
+        &apos;id&apos;: &apos;3.203&apos;,
+        &apos;parent&apos;: &apos;2.18&apos;,
+        &apos;name&apos;: &apos;France&apos;,
+        &apos;value&apos;: 64979548
+      }, {
+        &apos;id&apos;: &apos;3.204&apos;,
+        &apos;parent&apos;: &apos;2.18&apos;,
+        &apos;name&apos;: &apos;Netherlands&apos;,
+        &apos;value&apos;: 17035938
+      }, {
+        &apos;id&apos;: &apos;3.205&apos;,
+        &apos;parent&apos;: &apos;2.18&apos;,
+        &apos;name&apos;: &apos;Belgium&apos;,
+        &apos;value&apos;: 11429336
+      }, {
+        &apos;id&apos;: &apos;3.206&apos;,
+        &apos;parent&apos;: &apos;2.18&apos;,
+        &apos;name&apos;: &apos;Austria&apos;,
+        &apos;value&apos;: 8735453
+      }, {
+        &apos;id&apos;: &apos;3.207&apos;,
+        &apos;parent&apos;: &apos;2.18&apos;,
+        &apos;name&apos;: &apos;Switzerland&apos;,
+        &apos;value&apos;: 8476005
+      }, {
+        &apos;id&apos;: &apos;3.208&apos;,
+        &apos;parent&apos;: &apos;2.18&apos;,
+        &apos;name&apos;: &apos;Luxembourg&apos;,
+        &apos;value&apos;: 583455
+      }, {
+        &apos;id&apos;: &apos;3.209&apos;,
+        &apos;parent&apos;: &apos;2.18&apos;,
+        &apos;name&apos;: &apos;Monaco&apos;,
+        &apos;value&apos;: 38695
+      }, {
+        &apos;id&apos;: &apos;3.210&apos;,
+        &apos;parent&apos;: &apos;2.18&apos;,
+        &apos;name&apos;: &apos;Liechtenstein&apos;,
+        &apos;value&apos;: 37922
+      },
+      /***********/
+
+      /* Oceania */
+      {
+        &apos;id&apos;: &apos;2.19&apos;,
+        &apos;parent&apos;: &apos;1.5&apos;,
+        &apos;name&apos;: &apos;Australia and New Zealand&apos;
+      },
+
+      {
+        &apos;id&apos;: &apos;3.211&apos;,
+        &apos;parent&apos;: &apos;2.19&apos;,
+        &apos;name&apos;: &apos;Australia&apos;,
+        &apos;value&apos;: 24450561
+      }, {
+        &apos;id&apos;: &apos;3.212&apos;,
+        &apos;parent&apos;: &apos;2.19&apos;,
+        &apos;name&apos;: &apos;New Zealand&apos;,
+        &apos;value&apos;: 4705818
+      },
+
+      {
+        &apos;id&apos;: &apos;2.20&apos;,
+        &apos;parent&apos;: &apos;1.5&apos;,
+        &apos;name&apos;: &apos;Melanesia&apos;
+      },
+
+      {
+        &apos;id&apos;: &apos;3.213&apos;,
+        &apos;parent&apos;: &apos;2.20&apos;,
+        &apos;name&apos;: &apos;Papua New Guinea&apos;
+      }, {
+        &apos;id&apos;: &apos;3.214&apos;,
+        &apos;parent&apos;: &apos;2.20&apos;,
+        &apos;name&apos;: &apos;Fiji&apos;,
+        &apos;value&apos;: 905502
+      }, {
+        &apos;id&apos;: &apos;3.215&apos;,
+        &apos;parent&apos;: &apos;2.20&apos;,
+        &apos;name&apos;: &apos;Solomon Islands&apos;,
+        &apos;value&apos;: 611343
+      }, {
+        &apos;id&apos;: &apos;3.216&apos;,
+        &apos;parent&apos;: &apos;2.20&apos;,
+        &apos;name&apos;: &apos;New Caledonia&apos;,
+        &apos;value&apos;: 276255
+      }, {
+        &apos;id&apos;: &apos;3.217&apos;,
+        &apos;parent&apos;: &apos;2.20&apos;,
+        &apos;name&apos;: &apos;Vanuatu&apos;,
+        &apos;value&apos;: 276244
+      },
+
+      {
+        &apos;id&apos;: &apos;2.21&apos;,
+        &apos;parent&apos;: &apos;1.5&apos;,
+        &apos;name&apos;: &apos;Micronesia&apos;
+      },
+
+      {
+        &apos;id&apos;: &apos;3.218&apos;,
+        &apos;parent&apos;: &apos;2.21&apos;,
+        &apos;name&apos;: &apos;Guam&apos;,
+        &apos;value&apos;: 164229
+      }, {
+        &apos;id&apos;: &apos;3.219&apos;,
+        &apos;parent&apos;: &apos;2.21&apos;,
+        &apos;name&apos;: &apos;Kiribati&apos;,
+        &apos;value&apos;: 116398
+      }, {
+        &apos;id&apos;: &apos;3.220&apos;,
+        &apos;parent&apos;: &apos;2.21&apos;,
+        &apos;name&apos;: &apos;Federated States of Micronesia&apos;,
+        &apos;value&apos;: 105544
+      }, {
+        &apos;id&apos;: &apos;3.221&apos;,
+        &apos;parent&apos;: &apos;2.21&apos;,
+        &apos;name&apos;: &apos;Northern Mariana Islands&apos;,
+        &apos;value&apos;: 55144
+      }, {
+        &apos;id&apos;: &apos;3.222&apos;,
+        &apos;parent&apos;: &apos;2.21&apos;,
+        &apos;name&apos;: &apos;Marshall Islands&apos;,
+        &apos;value&apos;: 53127
+      }, {
+        &apos;id&apos;: &apos;3.223&apos;,
+        &apos;parent&apos;: &apos;2.21&apos;,
+        &apos;name&apos;: &apos;Palau&apos;,
+        &apos;value&apos;: 21729
+      }, {
+        &apos;id&apos;: &apos;3.224&apos;,
+        &apos;parent&apos;: &apos;2.21&apos;,
+        &apos;name&apos;: &apos;Nauru&apos;,
+        &apos;value&apos;: 11359
+      },
+
+      {
+        &apos;id&apos;: &apos;2.22&apos;,
+        &apos;parent&apos;: &apos;1.5&apos;,
+        &apos;name&apos;: &apos;Polynesia&apos;
+      },
+
+      {
+        &apos;id&apos;: &apos;3.225&apos;,
+        &apos;parent&apos;: &apos;2.22&apos;,
+        &apos;name&apos;: &apos;French Polynesia&apos;,
+        &apos;value&apos;: 283007
+      }, {
+        &apos;id&apos;: &apos;3.226&apos;,
+        &apos;parent&apos;: &apos;2.22&apos;,
+        &apos;name&apos;: &apos;Samoa&apos;,
+        &apos;value&apos;: 196440
+      }, {
+        &apos;id&apos;: &apos;3.227&apos;,
+        &apos;parent&apos;: &apos;2.22&apos;,
+        &apos;name&apos;: &apos;Tonga&apos;,
+        &apos;value&apos;: 108020
+      }, {
+        &apos;id&apos;: &apos;3.228&apos;,
+        &apos;parent&apos;: &apos;2.22&apos;,
+        &apos;name&apos;: &apos;American Samoa&apos;,
+        &apos;value&apos;: 55641
+      }, {
+        &apos;id&apos;: &apos;3.229&apos;,
+        &apos;parent&apos;: &apos;2.22&apos;,
+        &apos;name&apos;: &apos;Cook Islands&apos;,
+        &apos;value&apos;: 17380
+      }, {
+        &apos;id&apos;: &apos;3.230&apos;,
+        &apos;parent&apos;: &apos;2.22&apos;,
+        &apos;name&apos;: &apos;Wallis and Futuna&apos;,
+        &apos;value&apos;: 11773
+      }, {
+        &apos;id&apos;: &apos;3.231&apos;,
+        &apos;parent&apos;: &apos;2.22&apos;,
+        &apos;name&apos;: &apos;Tuvalu&apos;,
+        &apos;value&apos;: 11192
+      }, {
+        &apos;id&apos;: &apos;3.232&apos;,
+        &apos;parent&apos;: &apos;2.22&apos;,
+        &apos;name&apos;: &apos;Niue&apos;,
+        &apos;value&apos;: 1618
+      }, {
+        &apos;id&apos;: &apos;3.233&apos;,
+        &apos;parent&apos;: &apos;2.22&apos;,
+        &apos;name&apos;: &apos;Tokelau&apos;,
+        &apos;value&apos;: 1300
+      }];
+    Highcharts.getOptions().colors.splice(0, 0, &apos;transparent&apos;);
+    Highcharts.chart(&apos;sunburst-chart-container&apos;, {
+      chart: {
+        height: &apos;100%&apos;
+      },
+      title: {
+        text: &apos;World population 2017&apos;
+      },
+      subtitle: {
+        text: &apos;Source &lt;href=&quot;https://en.wikipedia.org/wiki/List_of_countries_by_population_(United_Nations)&quot;&gt;Wikipedia&lt;/a&gt;&apos;
+      },
+      series: [
+        {
+          type: &quot;sunburst&quot;,
+          data: data,
+          allowDrillToNode: true,
+          cursor: &apos;pointer&apos;,
+          dataLabels: {
+            format: &apos;{point.name}&apos;,
+            filter: {
+              property: &apos;innerArcLength&apos;,
+              operator: &apos;&gt;&apos;,
+              value: 16
+            }
+          },
+          levels: [
+            {
+              level: 1,
+              levelIsConstant: false,
+              dataLabels: {
+                filter: {
+                  property: &apos;outerArcLength&apos;,
+                  operator: &apos;&gt;&apos;,
+                  value: 64
+                }
+              }
+            },
+            {
+              level: 2,
+              colorByPoint: true
+            },
+            {
+              level: 3,
+              colorVariation: {
+                key: &apos;brightness&apos;,
+                to: -0.5
+              }
+            },
+            {
+              level: 4,
+              colorVariation: {
+                key: &apos;brightness&apos;,
+                to: 0.5
+              }
+            }
+          ]
+        }
+      ],
+      tooltip: {
+        headerFormat: &quot;&quot;,
+        pointFormat: &apos;The population of &lt;b&gt;{point.name}&lt;/b&gt; is &lt;b&gt;{point.value}&lt;/b&gt;&apos;
+      }
+    });
+  }
+
+  render() {
+    return (
+      &lt;div id={&quot;sunburst-chart-container&quot;}/&gt;
+    );
+  }
+}
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>
